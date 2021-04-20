@@ -1,0 +1,120 @@
+* { 
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body { 
+    background-image: url(../images/pexels-scott-webb-1029624.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container { 
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+    display: flex; 
+    justify-content: center;
+    margin-top: 15px;
+}
+#hr { 
+    background: rgb(21,222,253);
+    background: linear-gradient(90deg, rgba(21,222,253,1) 0%, rgba(0,103,172,1) 100%);
+    height: 3px!important;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.justify-content-around { 
+    display: flex;
+    justify-content:space-around;
+    margin-top: 150px;
+    margin-left: 60px!important;
+    margin-right: 60px!important;
+    .items { 
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        h3 { 
+            color: #3f58d1;
+            font-size: 1.5rem;
+        }
+        p { 
+            margin-top: 5px;
+        }
+        .lead { 
+            font-size: 1.2rem;
+        }
+        p { 
+            color: rgb(105, 105, 105);
+        }
+    }
+}
+
+.line { 
+    background-color: #6e8ccb;
+    height: 3px;
+    margin-top: -120px;
+    margin-bottom: 200px;
+}
+.center  {
+   margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn { 
+    padding:15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3e58d1;
+    color: white;
+    box-shadow: 15px 17px 34px -7px rgba(0,0,0,1);
+ -webkit-box-shadow: 15px 17px 34px -7px rgba(0,0,0,1);
+ -moz-box-shadow: 15px 17px 34px -7px rgba(0,0,0,1);
+     cursor: pointer;
+ }
+
+footer {
+    background-color: #6e8ccb;
+    display: flex;
+    justify-content: center;
+    width: 100%!important;
+    .nav-items { 
+        .footer-title { 
+            margin-top: 30px;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+}
+
+.bottom { 
+    background: rgb(53,57,132);
+    background: linear-gradient(90deg, rgba(53,57,132,1) 0%, rgba(28,16,43,1) 100%);
+}
+
+@media only screen and (max-width: 600px) {
+    .justify-content-around {
+      display: grid;
+      .items { 
+          margin-top: 40px;
+      }
+    }
+  }
+
+  
+@media only screen and (max-width: 600px) {
+    footer {
+      display: grid;
+    }
+  }
